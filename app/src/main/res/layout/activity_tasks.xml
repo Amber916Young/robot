@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:padding="5dp">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_marginTop="@dimen/default_padding_bottom"
+        android:layout_marginEnd="@dimen/default_padding_bottom"
+        android:layout_marginBottom="@dimen/default_padding_bottom" />
+
+    <RelativeLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp">
+
+        <TextView
+            android:id="@+id/task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="task_name"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/task_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/task_name"
+            android:layout_marginTop="5dp"
+            android:maxLines="2"
+            android:text="task_detail"
+            android:textSize="16dp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/task_accept_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="task_accept_time" />
+
+        <Button
+            android:id="@+id/finishBtn"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/success"
+            android:text="over"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/white"
+            android:text="del"
+            android:textColor="@color/offLine_red"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:background="#686868" />
+</RelativeLayout>

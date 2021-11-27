@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    tools:context=".TaskaddActivity">
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Add a new task"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/l1"
+        android:layout_below="@+id/info"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="TaskName"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/TaskName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="input task's name"
+            android:inputType="text"
+            android:minHeight="48dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="TaskDetail"
+            android:textSize="20sp" />
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/task_detail"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:ems="10"-->
+        <!--            android:hint="input task's detail"-->
+        <!--            android:inputType="text"-->
+        <!--            android:minHeight="48dp" />-->
+
+        <EditText
+            android:id="@+id/task_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_weight="10"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="input task's detail"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l2"
+
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Maximum"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/maximum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="input maxNumber"
+            android:inputType="number"
+            android:minHeight="48dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        android:layout_below="@+id/l22"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/cancelTask"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:backgroundTint="@color/offLine_red"
+            android:textColor="@color/white"
+            android:text="cancel"
+            android:textSize="14dp" />
+
+
+        <Button
+            android:id="@+id/addTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/success"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+</RelativeLayout>

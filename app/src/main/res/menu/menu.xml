@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuRegister"
+        android:orderInCategory="101"
+        android:icon="@drawable/re"
+        app:showAsAction="never"
+        android:title="register" />
+    <item
+        android:id="@+id/menuRobots"
+        android:orderInCategory="102"
+        android:icon="@drawable/re"
+        app:showAsAction="never"
+        android:title="All Robots" />
+    <item
+        android:id="@+id/menuBroken"
+        android:orderInCategory="103"
+        android:icon="@drawable/re"
+        app:showAsAction="never"
+        android:title="Report Broken" />
+
+    <item
+        android:id="@+id/newTasks"
+        android:orderInCategory="104"
+        android:icon="@drawable/re"
+        app:showAsAction="never"
+        android:title="create a task" />
+    <item
+        android:id="@+id/viewAllTasks"
+        android:orderInCategory="104"
+        android:icon="@drawable/re"
+        app:showAsAction="never"
+        android:title="view all tasks" />
+
+</menu>
